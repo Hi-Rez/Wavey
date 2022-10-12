@@ -80,7 +80,7 @@ extension RealityView {
         satinRenderer = Renderer(context: context, scene: satinScene, camera: satinCamera)
         satinRenderer.setClearColor(.zero)
         satinRenderer.colorLoadAction = .load
-        satinRenderer.depthLoadAction = .clear
+        satinRenderer.depthLoadAction = .load
     }
     
     func setupCameraRenderer(_ context: Context) {
@@ -173,7 +173,7 @@ extension RealityView {
         
         let rpd = MTLRenderPassDescriptor()
         rpd.colorAttachments[0].texture = targetColorTexture
-//        rpd.depthAttachment.texture = context.sourceDepthTexture
+        rpd.depthAttachment.texture = context.sourceDepthTexture
 
         satinRenderer.draw(
             renderPassDescriptor: rpd,
