@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "satin",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Hi-Rez/Satin",
+      "state" : {
+        "branch" : "master",
+        "revision" : "06bead7a88e80ba8446b79c49ca3c11c1e1bbc8c"
+      }
+    }
+  ],
+  "version" : 2
+}
